@@ -1,3 +1,6 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
 .container {
   width: min(100% - 40px, 1290px);
   margin-inline: auto;
