@@ -1,0 +1,31 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.trial {
+background-color: $bgcolor-peach;
+padding: 120px 0;
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 65px;
+    max-width: 913px;
+    padding-bottom: 10px;
+  }
+
+  &__text {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+
+  &__actions {
+  }
+
+}
