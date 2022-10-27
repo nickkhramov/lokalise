@@ -1,2 +1,25 @@
 @use "../presets" as *;
 @use "../mixins" as *;
+
+.reply {
+  background-color: $bgcolor-blue;
+
+  &__text {
+    font-size: 30px;
+    line-height: 40px;
+    max-width: 908px;
+    padding-top: 12px;
+    padding-bottom: 31px;
+  }
+
+  &__logo {
+    padding-top: 9px;
+  }
+
+}
+
+.container--reply {
+  display: flex;
+  justify-content: space-between;
+  padding: 53px 0 105px;
+}
