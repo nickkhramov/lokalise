@@ -1,2 +1,36 @@
 @use "../presets" as *;
 @use "../mixins" as *;
+
+.hero {
+
+  &__wrap {
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 65px;
+    line-height: 70px;
+    padding-top: 86px;
+    max-width: 100px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    max-width: 510px;
+  }
+
+  &__actions {
+  }
+
+  &__info {
+  }
+
+  &__image {
+  }
+}
+.container--hero {
+  display: flex;
+
+}
