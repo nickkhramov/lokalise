@@ -1,2 +1,25 @@
 @use "../presets" as *;
 @use "../mixins" as *;
+
+.companies {
+  background-color: $bgcolor-peach;
+
+  &__title {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 108px;
+    max-width: 740px;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 66px;
+    padding-bottom: 102px;
+  }
+}
