@@ -4,30 +4,35 @@
 .hero {
 
   &__wrap {
+    padding-top: 86px;
+    padding-bottom: 175px;
   }
 
   &__title {
     font-weight: 600;
     font-size: 65px;
     line-height: 70px;
-    padding-top: 86px;
-    max-width: 100px;
+    max-width: 531px;
   }
 
   &__text {
     font-weight: 400;
     font-size: 25px;
     line-height: 35px;
+    padding-top: 7px;
     max-width: 510px;
   }
 
   &__actions {
+    padding-top: 49px;
   }
 
   &__info {
+    padding-top: 29px;
   }
 
   &__image {
+    padding-top: 151px;
   }
 }
 .container--hero {
