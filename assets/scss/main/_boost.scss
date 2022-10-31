@@ -14,6 +14,7 @@
 
   &__wrap {
     display: flex;
+    gap: 40px;
   }
 
   &__item {
@@ -27,14 +28,17 @@
     font-weight: 600;
     font-size: 30px;
     line-height: 40px;
+    margin-bottom: 34px;
   }
 
   &__text {
     font-size: 20px;
+    line-height: 30px;
   }
 
   &__link {
     font-size: 20px;
+    line-height: 30px;
     text-decoration-line: underline;
   }
 }
