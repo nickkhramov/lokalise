@@ -37,3 +37,6 @@
 .btn--margin {
   margin-right: 6px;
 }
+.visually-hidden {
+  @include visually-hidden
+}

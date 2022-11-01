@@ -17,7 +17,7 @@
   }
 
   &__list {
-    list-style: none;
+    @include unlist
   }
 
   &__item {
