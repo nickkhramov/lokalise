@@ -2,77 +2,49 @@
 @use "../mixins" as *;
 
 .job {
-}
-.control {
 
+  &__article {
+    padding-top: 88px;
+    padding-bottom: 158px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-		&__wrap {
-		}
+  &__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin-right: 19px;
+  }
 
-		&__title {
-		}
+  &__title {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 60px;
+  }
 
-		&__description {
-		}
+  &__description {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 30px;
+  }
 
-		&__link-inner {
-		}
+  &__link-inner {
+    text-decoration: underline;
+  }
 
-		&__link {
-		}
+  &__link {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 30px;
+  }
 
-		&__image {
-		}
-}
-.time {
+  &__image {
+  }
 
-
-		&__image {
-		}
-
-		&__wrap {
-		}
-
-		&__title {
-		}
-
-		&__description {
-		}
-
-		&__link {
-		}
-}
-.quality {
-
-		&__wrap {
-		}
-
-		&__title {
-		}
-
-		&__description {
-		}
-
-		&__link {
-		}
-
-		&__image {
-		}
-}
-.work {
-
-		&__image {
-		}
-
-		&__wrap {
-		}
-
-		&__title {
-		}
-
-		&__description {
-		}
-
-		&__link {
-		}
+  &__gif {
+    min-width: 632px;
+  }
 }
