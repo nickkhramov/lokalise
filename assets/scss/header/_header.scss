@@ -18,11 +18,26 @@
     padding-bottom: 25px;
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 35px;
+
+  }
+
+  &__logo {
+    @include sm {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__actions {
-    margin-left: auto;
+    @include sm-min {
+      margin-left: auto;
+    }
+
+    @include xl {
+      margin-right: auto;
+    }
   }
 }

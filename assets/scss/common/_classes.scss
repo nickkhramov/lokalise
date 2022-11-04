@@ -10,6 +10,7 @@
   font-weight: 600;
   font-size: 16px;
   text-align: center;
+  cursor: pointer;
 }
 .btn--light {
   color: $color-primary;
@@ -27,8 +28,14 @@
   border: none;
 }
 .btn--sm {
-  min-width: 120px;
-  min-height: 45px;
+  @include lg-min {
+    min-width: 120px;
+    min-height: 45px;
+  }
+  @include lg {
+    min-width: 106px;
+    min-height: 40px;
+  }
 }
 .btn--lg {
   min-width: 160px;
