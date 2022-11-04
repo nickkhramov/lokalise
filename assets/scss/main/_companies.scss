@@ -21,5 +21,11 @@
     align-items: center;
     padding-top: 66px;
     padding-bottom: 102px;
+
+    @include lg {
+      flex-wrap: wrap;
+      gap: $gap-xl 160px;
+      justify-content: center;
+    }
   }
 }
