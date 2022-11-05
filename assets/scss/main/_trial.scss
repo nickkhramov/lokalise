@@ -18,6 +18,10 @@ padding: 120px 0;
     font-size: 65px;
     max-width: 913px;
     padding-bottom: 32px;
+
+    @include lg {
+      font-size: 50px;
+    }
   }
 
   &__text {
