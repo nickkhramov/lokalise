@@ -38,8 +38,14 @@
   }
 }
 .btn--lg {
+  @include md-min {
   min-width: 160px;
   min-height: 60px;
+  }
+  @include md {
+  min-width: 130px;
+  min-height: 50px;
+  }
 }
 .btn--margin {
   margin-right: 6px;

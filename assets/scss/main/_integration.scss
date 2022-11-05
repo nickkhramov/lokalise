@@ -17,20 +17,63 @@
     font-size: 65px;
     max-width: 886px;
     padding-bottom: 2px;
+
+    @include lg {
+      font-size: 50px;
+      max-width: 650px;
+    }
+    @include md {
+      font-size: 40px;
+      max-width: 450px;
+    }
+    @include sm {
+      font-size: 30px;
+      max-width: 350px;
+    }
   }
 
   &__text {
     font-size: 25px;
     max-width: 587px;
     padding-bottom: 24px;
+
+    @include lg {
+      font-size: 20px;
+    }
+    @include md {
+      font-size: 15px;
+    }
   }
 
-  &__image {
+  &__picture {
     padding-bottom: 28px;
   }
 
+  &__image {
+    @include xl {
+      max-width: 850px;
+    }
+    @include lg {
+      max-width: 650px;
+    }
+    @include md {
+      max-width: 450px;
+    }
+    @include sm {
+      max-width: 350px;
+    }
+    @include xx {
+      max-width: 250px;
+    }
+  }
+
 }
-.btn--integration{
+.btn--integration {
   padding-left: 20px;
   padding-right: 20px;
+
+  @include md {
+    padding-left: 10px;
+    padding-right: 10px;
+    }
 }
