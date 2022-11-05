@@ -9,15 +9,28 @@
     line-height: 60px;
     padding-top: 153px;
     padding-bottom: 75px;
+
+    @include lg {
+      text-align: center;
+    }
   }
 
   &__wrap {
     display: flex;
     gap: $gap-xl;
     padding-bottom: 216px;
+
+    @include lg {
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
+    @include lg {
+      max-width: 550px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__image {
