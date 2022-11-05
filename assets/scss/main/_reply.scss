@@ -4,21 +4,40 @@
 .reply {
   background-color: $bgcolor-blue;
 
+  &__wrap {
+    @include xl {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+
   &__text {
     font-size: 30px;
     line-height: 40px;
     max-width: 908px;
     padding-top: 12px;
     padding-bottom: 31px;
+
+    @include xl {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
   }
 
   &__logo {
     padding-top: 9px;
   }
-
 }
+
 .container--reply {
   display: flex;
   justify-content: space-between;
   padding: 53px 0 105px;
+
+  @include xl {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
