@@ -13,6 +13,11 @@
     @include lg {
       text-align: center;
     }
+
+    @include md {
+      font-size: 32px;
+      line-height: 40px;
+    }
   }
 
   &__wrap {

@@ -3,16 +3,18 @@
 
 .hero {
 
-  &__wrap {
-    padding-top: 86px;
-    padding-bottom: 175px;
-  }
-
   &__title {
     font-weight: 600;
     font-size: 65px;
     line-height: 70px;
-    max-width: 531px;
+    max-width: 539px;
+    padding-top: 86px;
+    grid-area: ttl;
+
+    @include md {
+      font-size: 40px;
+      line-height: 45px;
+    }
   }
 
   &__text {
@@ -21,20 +23,56 @@
     line-height: 35px;
     padding-top: 7px;
     max-width: 510px;
+    grid-area: txt;
+
+    @include md {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   &__actions {
     padding-top: 49px;
+    grid-area: act;
   }
 
   &__info {
     padding-top: 29px;
+    padding-bottom: 175px;
+    grid-area: inf;
+  }
+
+  &__picture {
+    grid-area: img;
+
+    @include xl {
+      padding-top: 40px;
+    }
   }
 
   &__image {
-    padding-top: 151px;
+    max-width: 751px;
+
+    @include xl {
+      width: 90%;
+    }
+    @include xx {
+      width: 70%;
+    }
   }
 }
 .container--hero {
-  display: flex;
+  display: grid;
+  align-items: center;
+  grid-template-areas: "ttl img" "txt img" "act img" "inf img";
+
+  @include xl-min {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include xl {
+    text-align: center;
+    grid-template-areas: "ttl" "txt" "img" "act" "inf";
+    justify-items: center;
+  }
 }

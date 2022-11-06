@@ -13,6 +13,11 @@
     margin-right: auto;
     padding-top: 108px;
     max-width: 740px;
+
+    @include md {
+      font-size: 32px;
+      line-height: 40px;
+    }
   }
 
   &__wrap {

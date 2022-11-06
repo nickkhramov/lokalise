@@ -9,6 +9,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include lg {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
+    &_reversed {
+      @include lg {
+      flex-direction: column-reverse;
+      }
+    }
   }
 
   &__content {
@@ -22,12 +33,21 @@
     font-weight: 600;
     font-size: 50px;
     line-height: 60px;
+
+    @include md {
+      font-size: 32px;
+      line-height: 40px;
+    }
   }
 
   &__description {
     font-size: 20px;
     line-height: 30px;
     padding-top: 30px;
+
+    @include md {
+      font-size: 18px;
+    }
   }
 
   &__link-inner {
@@ -41,10 +61,27 @@
     padding-top: 30px;
   }
 
-  &__image {
-  }
-
   &__gif {
     min-width: 632px;
+
+    @include xl {
+      min-width: 70%;
+      padding-top: 40px;
+    }
+    @include md {
+      min-width: 0;
+      max-width: 90%;
+    }
   }
+
+    &__img {
+      @include xl {
+        min-width: 70%;
+        padding-top: 40px;
+      }
+      @include md {
+        min-width: 0;
+        max-width: 90%;
+      }
+    }
 }

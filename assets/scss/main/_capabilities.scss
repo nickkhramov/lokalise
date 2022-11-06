@@ -11,6 +11,11 @@
     text-align: center;
     padding-top: 120px;
     padding-bottom: 79px;
+
+    @include md {
+      font-size: 32px;
+      line-height: 40px;
+    }
   }
 
   &__wrap {
