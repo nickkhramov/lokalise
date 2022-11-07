@@ -976,6 +976,12 @@ a {
   }
 }
 
+@media (max-width: 1199.8px) and (min-width: 992px) {
+  .job__article_reversed {
+    gap: 20px;
+  }
+}
+
 @media (max-width: 991.8px) {
   .btn--sm {
     min-width: 106px;
