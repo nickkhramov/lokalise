@@ -4,10 +4,20 @@
 .footer-menu {
   padding: 92px 0 95px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 33px;
 
-  &__wrap {
+  @include lg {
+    flex-direction: column;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+
+    @include md {
+      justify-content: space-around;
+    }
+
   }
 
   &__name {
@@ -25,25 +35,40 @@
     width: 188px;
     padding-bottom: 15px;
   }
-
-  &__link {
-  }
 }
 
 
 .studies {
   max-width: 300px;
-  margin-right: 106px;
+  margin-right: 139px;
+
+  @include lg {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    text-align: center;
+  }
 
   &__title {
     font-weight: 600;
     font-size: 40px;
     line-height: 50px;
     padding-bottom: 28px;
+
+    @include lg {
+      font-size: 35px;
+      line-height: 40px;
+    }
+  }
+
+  &__picture {
+    padding-bottom: 31px;
   }
 
   &__image {
-    padding-bottom: 31px;
+    @include lg {
+      max-width: 100%;
+    }
   }
 
   &__logo {
