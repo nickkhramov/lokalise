@@ -923,10 +923,6 @@ a {
     min-width: 70%;
     padding-top: 40px;
   }
-  .job__img {
-    min-width: 70%;
-    padding-top: 40px;
-  }
   .reply__wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1080,10 +1076,6 @@ a {
     font-size: 18px;
   }
   .job__gif {
-    min-width: 0;
-    max-width: 90%;
-  }
-  .job__img {
     min-width: 0;
     max-width: 90%;
   }

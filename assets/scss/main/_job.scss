@@ -76,15 +76,4 @@
       max-width: 90%;
     }
   }
-
-    &__img {
-      @include xl {
-        min-width: 70%;
-        padding-top: 40px;
-      }
-      @include md {
-        min-width: 0;
-        max-width: 90%;
-      }
-    }
 }
